@@ -68,7 +68,7 @@ function App() {
         </section>
 
         <div className='h-[20vw] flex justify-center'>
-          <h1 className='absolute bottom-10 text-white text-[2vw] z-50'>Made With 🩷 by HACKDUKE team</h1>
+          <h1 className='absolute bottom-10 text-white text-[2vw] z-50'>Special thanks to HackDuke for providing the template! ❤️ </h1>
         </div>
       </Backdrop>
     </>
