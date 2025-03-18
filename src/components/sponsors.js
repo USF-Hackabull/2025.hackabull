@@ -25,7 +25,7 @@ export const Sponsors = () => {
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
               <SponsorLogo src="/images/sponsors/DE_Shaw.svg" url="https://www.deshaw.com/" alt="DE Shaw" className='focus-visible:animate-bounce'/>
               <SponsorLogo src="/images/sponsors/Arize.svg" url="https://arize.com/" alt="Arize"/>
-              <SponsorLogo src="/images/sponsors/Accenture.svg" url="https://www.accenture.com/" alt="Accenture"/>
+              <SponsorLogo src="/image/sponsors/Slalom.svg" url="https://www.slalom.com/" alt="Slalom"/>
               <SponsorLogo src="/images/sponsors/Perplexity.png" url="https://www.perplexity.ai/" alt="Perplexity"/>
 							<SponsorLogo src="/images/sponsors/MathWorks.png" url="https://www.mathworks.com/" alt="MathWorks"/>
               <SponsorLogo src="/images/sponsors/endex.png" url="https://endex.ai/" alt="Endex"/>
