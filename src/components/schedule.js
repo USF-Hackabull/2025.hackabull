@@ -126,8 +126,8 @@ export const SpeakerShark = () => {
         }}
       />
       <img
-        src="/images/Speaker.png"
-        alt="Speaker"
+        src="/images/Schedule.png"
+        alt="Schedule"
         style={{
           position: 'absolute',
           top: '43%',
