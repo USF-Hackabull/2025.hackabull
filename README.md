@@ -1,4 +1,4 @@
-# Hackabull Website for USF Credit
+# Hackabull Website
 
 The website is a fork version from HackDuke 2025. A special thank you for Duke teams for the support!
 
