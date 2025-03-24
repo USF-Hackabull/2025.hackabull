@@ -8,7 +8,6 @@ import { FAQ } from "./components/faq";
 import { Sponsors } from "./components/sponsors";
 import { Speaker } from "./components/speaker";
 import { Backdrop } from "./components/backdrop";
-import { Billboard } from "./components/test";
 
 function App() {
   return (
