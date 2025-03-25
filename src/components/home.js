@@ -48,7 +48,7 @@ export const Home = () => {
       <div
         className="absolute inset-0 z-0 w-full h-full"
         style={{
-          backgroundImage: `url(/image/backgrounds/fullbackground.png)`,
+          backgroundImage: `url(/image/backgrounds/parallaxbackground.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
         }}
