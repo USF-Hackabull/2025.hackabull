@@ -1,11 +1,12 @@
 export const About = () => {
   return (
     <div
-      className="w-full h-screen max-h-full overflow-visible flex flex-col md:flex-row items-center justify-center md:justify-evenly"
+      className="w-full h-screen max-h-auto flex flex-col md:flex-row items-center justify-center md:justify-evenly"
       style={{
         backgroundImage: `url('/image/backgrounds/aboutbackground.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "top",
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="md:w-1/2 text-center md:text-left">
@@ -17,12 +18,6 @@ export const About = () => {
           learning through technology.
         </p>
       </div>
-
-      <img
-        src="image/backgrounds/billboard.png"
-        alt="About Us"
-        className="w-full max-w-sm rounded-lg shadow-lg object-contain"
-      />
     </div>
   );
 };
