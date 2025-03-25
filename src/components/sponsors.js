@@ -17,6 +17,14 @@ const SponsorLogo = ({ src, alt, className, url, noPadding=false}) => {
 
 export const Sponsors = () => {
   return (
+    <div
+      className={`relative w-full h-[60vw]`}
+      style={{
+        backgroundImage: `url('/image/backgrounds/sponsorsbackground.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+      }}
+    >
     <Panel className='h-[70vw]'>
       <div className="ml-[5vw] mr-[5vw]">
         <H1>Sponsors</H1>
@@ -53,5 +61,6 @@ export const Sponsors = () => {
         
       </div>
     </Panel>
+    </div>
   );
 };

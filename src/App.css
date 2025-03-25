@@ -82,23 +82,25 @@
 
 
 .custom-shell-bullet {
-  background-image: url('../public/images/ShellBullet.svg');
+  background-image: url('../public/images/AboutLeftSpeaker.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1.75em;
   padding-left: 3em;
+  font-weight: bold;
   /* margin-bottom: 0.5em; */
-  color: #D5CFFF;
+  color: #3a5a40;
 }
 
 .custom-shell-bullet-alt {
-  background-image: url('../public/images/ShellBulletAlt.svg');
+  background-image: url('../public/images/AboutLeftSpeaker.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1.75em;
   padding-left: 3em;
+  font-weight: bold;
   /* margin-bottom: 0.5em; */
-  color: #8C81EF;
+  color: #606c38;
 }
 
 .glow {
