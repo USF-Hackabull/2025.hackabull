@@ -3,44 +3,65 @@ import Accordion from './accordion'
 import { Panel } from "./panel"
 import { H1 } from "./typography"
 
+
 export const FAQ = () => {
   return (
-    <Panel className="h-[75vw] md:h-[60vw]">
-      <H1 className='text-center mb-30'>FAQ</H1>
-      {/* This container hosts the jellyfish images */}
-      <JellyFish />
-      <div className='absolute flex flex-col md:flex-row md:space-x-20 mx-auto left-[30%] md:left-[20%] top-8 md:top-32 z-30'>
-        <div className='pt-8 flex align-center flex-col max-w-[45vw] md:mr-4'>
-          <ListTitle title='General' />
-          <Accordion
-            items={GENERAL_QUESTIONS.map(question => ({
-              title: question.title,
-              content:
-                question.content
-            }))}
-          />
+    <div
+      className={`relative w-full h-[100vw]`}
+      style={{
+        backgroundImage: `url('/image/backgrounds/faqbackground.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+      }}
+    >
+      <Panel className="h-full">
+        <div className="absolute w-full top-[5vh] z-10">
+          <H1 className='text-center mb-30'>FAQ</H1>
+        </div>
+        {/* This container hosts the jellyfish images */}
+        <JellyFish />
+
+         {/* The two columns with custom widths */}
+         <div className="absolute flex justify-between w-full left-1/2 -translate-x-1/2 top-[30%] md:top-[20%] z-30">
+          {/* Empty Space - 1/7 width */}
+          <div className="w-[14.2857%]" />
+          
+          {/* First Column - 2/7 width */}
+          <div className="w-[28.5714%] pt-8 flex align-center flex-col max-w-[45vw] md:mr-4">
+            <ListTitle title='General' />
+            <Accordion
+              items={GENERAL_QUESTIONS.map(question => ({
+                title: question.title,
+                content: question.content
+              }))}
+            />
+          </div>
+          
+          {/* Empty Space (Distance between columns) - 1/7 width */}
+          <div className="w-[14.2857%]" />
+          
+          {/* Second Column - 2/7 width */}
+          <div className="w-[28.5714%] md:pt-8 flex align-center flex-col max-w-[45vw]">
+            <ListTitle title='Logistics' />
+            <Accordion
+              items={LOGISTICS_QUESTIONS.map(question => ({
+                title: question.title,
+                content: question.content
+              }))}
+            />
+          </div>
+          
+          {/* Empty Space - 1/7 width */}
+          <div className="w-[14.2857%]" />
         </div>
 
-        <div className='md:pt-8 flex align-center flex-col ml-20 md:ml-0 max-w-[35vw]'>
-          <ListTitle title='Logistics' />
-          <Accordion
-            items={LOGISTICS_QUESTIONS.map(question => ({
-              title: question.title,
-              content:
-                question.content
-            }))}
-          />
-        </div>
-      </div>
-
-      <img
-        src='/images/Ray.png'
-        alt='Ray'
-        className='float2 absolute z-20 w-[30vw] right-[5vw] bottom-[0vw] md:bottom-[5vw] md:right-[5vw]'
-      ></img>
-
-      {/*<MusicNotes /> scaling*/}
-    </Panel>
+        <img
+          src='/images/Ray.png'
+          alt='Ray'
+          className='float2 absolute z-20 w-[30vw] right-[5vw] bottom-[0vw] md:bottom-[5vw] md:right-[5vw]'
+        />
+      </Panel>
+    </div>
   )
 }
 
