@@ -31,6 +31,7 @@ export const Sponsors = () => {
         <div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
           <div className="flex flex-row gap-[1vw] w-full">
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
+              <SponsorLogo src="/image/sponsors/Pfizer.png" url="https://www.pfizer.com/about" alt="Pfizer" className='focus-visible:animate-bounce'/>
               <SponsorLogo src="/image/sponsors/NextEraEnergy.png" url="https://www.nexteraenergy.com/" alt="NextEra Energy" className='focus-visible:animate-bounce'/>
 							{/* <SponsorLogo src="/image/sponsors/MathWorks.png" url="https://www.mathworks.com/" alt="MathWorks"/>
               <SponsorLogo src="/images/sponsors/endex.png" url="https://endex.ai/" alt="Endex"/> */}
@@ -46,6 +47,7 @@ export const Sponsors = () => {
             </div>
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
               <SponsorLogo src="/image/sponsors/Slalom.svg" url="https://www.slalom.com/" alt="Slalom"/>
+              <SponsorLogo src="/image/sponsors/Lithionics.png" url="https://lithionics.com/" alt="Lithionics"/>
               {/* <SponsorLogo src="/images/sponsors/Monster.webp" url="https://www.monsterenergy.com/" alt="Monster"/>
               <SponsorLogo src="/images/sponsors/CardsAgainstHumanity.svg" url="https://www.cardsagainsthumanity.com/" alt="CardsAgainstHumanity"/>
               {<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers" className="pt-[1vw]" noPadding/>} */}
