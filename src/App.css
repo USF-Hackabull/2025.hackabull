@@ -24,21 +24,18 @@
 }
 
 .speaker-text {
-
   font-family: Urbanist;
   font-size: 1.5em;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: -0.04em;
-  color: #D5CFFF;
+  color: #d5cfff;
   text-align: right;
-
 }
 
 .speaker-body {
   overflow-x: hidden;
 }
-
 
 .separator {
   width: 100%;
@@ -47,7 +44,6 @@
   margin: 20px 0;
   /* Adjust spacing as needed */
 }
-
 
 .App-header {
   background-color: #282c34;
@@ -75,14 +71,19 @@
   }
 }
 
-
 .gradient-container {
-  background: linear-gradient(180deg, #132b84, #6556b5, #2a2f8a, #320a60, #1a083b); /* Example gradient */
+  background: linear-gradient(
+    180deg,
+    #132b84,
+    #6556b5,
+    #2a2f8a,
+    #320a60,
+    #1a083b
+  ); /* Example gradient */
 }
 
-
 .custom-shell-bullet {
-  background-image: url('../public/images/AboutLeftSpeaker.png');
+  background-image: url("../public/images/AboutLeftSpeaker.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1.75em;
@@ -93,7 +94,7 @@
 }
 
 .custom-shell-bullet-alt {
-  background-image: url('../public/images/AboutLeftSpeaker.png');
+  background-image: url("../public/images/AboutLeftSpeaker.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1.75em;
@@ -104,10 +105,10 @@
 }
 
 .glow {
-  text-shadow: #FFF 0 0 10px;
+  text-shadow: #c1413e 0 0 10px;
 }
 
-.waves-container{
+.waves-container {
   position: absolute;
   width: 100%;
   height: 100px;
@@ -115,27 +116,25 @@
 }
 
 .wave {
-  background: url('../public/images/waves/wave1.png');
+  background: url("../public/images/waves/wave1.png");
   position: absolute;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-size: 1000px 100px;
-
 }
 .wave1 {
   animation: animate 11s linear infinite;
   animation-delay: -3.9s;
-  bottom:0;
+  bottom: 0;
   z-index: 0;
 }
 .wave2 {
   animation: animate 7s linear infinite;
   animation-delay: -3.8s;
-  bottom:0;
+  bottom: 0;
   z-index: 0;
   opacity: 0.5;
-
 }
 @keyframes animate {
   0% {
@@ -144,7 +143,6 @@
   100% {
     background-position-x: 1000px;
   }
-  
 }
 
 .buoy {
@@ -164,10 +162,10 @@
 
 @keyframes tilt {
   0% {
-      transform: rotate(10deg) translateY(-5vh); /* Left */
+    transform: rotate(10deg) translateY(-5vh); /* Left */
   }
   100% {
-      transform: rotate(-10deg) translateY(1vh);
+    transform: rotate(-10deg) translateY(1vh);
   }
 }
 
@@ -203,9 +201,9 @@
 
 @keyframes updown {
   0% {
-      transform: translateY(-2vw);
+    transform: translateY(-2vw);
   }
   100% {
-      transform: translateY(0vw);
+    transform: translateY(0vw);
   }
 }

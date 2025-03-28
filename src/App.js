@@ -51,9 +51,9 @@ function App() {
         <Speaker />
       </section>
 
-      <section id="schedule">
+      {/* <section id="schedule">
         <Schedule />
-      </section>
+      </section> */}
 
       <section id="faq">
         <FAQ />
@@ -63,11 +63,9 @@ function App() {
         <Sponsors />
       </section>
 
-      <div className="h-[20vw] flex justify-center">
-        <h1 className="absolute bottom-10 text-white text-[2vw] z-50">
-          Special thanks to HackDuke for providing the template! ❤️{" "}
-        </h1>
-      </div>
+      {/* <div className="h-[20vw] flex justify-center">
+        
+      </div> */}
     </>
   );
 }

@@ -1,5 +1,4 @@
-import { Panel } from "./panel";
-import { H1 } from "./typography";
+import { Title } from "./typography";
 
 const Track = ({
   title,
@@ -29,14 +28,15 @@ export const Tracks = () => {
   // TODO: Responsiveness
   return (
     <div
-      className={`relative w-full h-[60vw]`}
+      className={`relative w-full h-[60dvw]`}
       style={{
         backgroundImage: `url('/image/backgrounds/tracksbackground.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "top",
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <H1 className="text-center mb-8">Tracks</H1>
+      <Title className="text-center mb-8">Tracks</Title>
 
       {/* Center Track */}
       <Track
