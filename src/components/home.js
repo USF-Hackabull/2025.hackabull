@@ -14,12 +14,18 @@ export const Home = () => {
   const layer1Y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
   const layer2Y = useTransform(scrollYProgress, [0, 1], ["0%", "45%"]);
   const layer3Y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
 
   return (
     <div
       ref={ref}
-      className="w-full h-screen overflow-hidden relative relative flex items-center justify-center"
+      className="w-full h-[90dvh] md:h-[130dvh] overflow-hidden relative flex items-center justify-center"
+      style={{
+        backgroundImage: `url(/image/backgrounds/landingbackground.png)`,
+        backgroundPosition: "bottom",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <motion.div
         style={{ y: textY }}
@@ -45,16 +51,17 @@ export const Home = () => {
       </motion.div>
 
       {/* Background Layer (Static) */}
-      <div
+      {/* <div
         className="absolute inset-0 z-0 w-full h-full"
         style={{
-          backgroundImage: `url(/image/backgrounds/parallaxbackground.png)`,
-          backgroundPosition: "bottom",
-          backgroundSize: "cover",
+          backgroundImage: `url(/image/backgrounds/landingbackground.png)`,
+          backgroundPosition: "center",
+          backgroundSize: "100% 100%",
+          backgroundRepeat: "no-repeat",
         }}
-      />
+      /> */}
 
-      <motion.div
+      {/* <motion.div
         className="absolute inset-0 z-10 -bottom-20"
         style={{
           backgroundImage: `url(/image/backgrounds/city1.png)`,
@@ -80,7 +87,7 @@ export const Home = () => {
           backgroundSize: "cover",
           y: layer3Y,
         }}
-      />
+      /> */}
     </div>
   );
 };
