@@ -62,6 +62,11 @@ export const Sponsors = () => {
       alt: "Mosaic",
     },
     {
+      src: "/image/sponsors/SolusCode.png",
+      url: "https://www.soluscode.com/",
+      alt: "SolusCode",
+    },
+    {
       src: "/image/sponsors/RaymondJames.png",
       url: "https://www.raymondjames.com/",
       alt: "Raymond James",

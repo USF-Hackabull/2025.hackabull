@@ -53,14 +53,24 @@ function App() {
         <FAQ />
       </section>
 
-      <section id="sponsors">
-        <Sponsors />
-      </section>
+        {/* Sponsors Section */}
+        <section id="sponsors">
+          <Sponsors />
+        </section>
+      </main>
 
-      {/* <div className="h-[20vw] flex justify-center">
-        
-      </div> */}
-    </>
+      {/* Footer Section */}
+      <footer className="bg-gray-900 text-white text-center">
+        <div className="py-4 border-t border-green-700/30">
+          <p className="text-sm md:text-base">
+            Made with 💚 by the Hackabull team with support from our friends at HackDuke
+          </p>
+        </div>
+        <div className="bg-black py-2 text-xs">
+          <p>© 2025 Hackabull</p>
+        </div>
+      </footer>
+    </div>
   );
 }
 
