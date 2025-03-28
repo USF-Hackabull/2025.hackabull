@@ -3,22 +3,14 @@ import { Navbar } from "./components/navbar";
 import { Home } from "./components/home";
 import { About } from "./components/about";
 import { Tracks } from "./components/tracks";
-import { Schedule } from "./components/schedule";
 import { FAQ } from "./components/faq";
 import { Sponsors } from "./components/sponsors";
 import { Speaker } from "./components/speaker";
-import { Backdrop } from "./components/backdrop";
-
-// Bottom bar component that appears at the very bottom of the page
-const BottomBar = () => (
-  <div className="bg-black text-white text-center py-1 text-xs border-t border-gray-800">
-    <p>© 2025 Hackabull</p>
-  </div>
-);
 
 function App() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen bg-black overflow-hidden">
+      {/* MLH Trust Badge */}
       <a
         id="mlh-trust-badge"
         style={{
@@ -42,42 +34,52 @@ function App() {
         />
       </a>
 
+      {/* Navigation */}
       <Navbar />
 
-      <Home />
+      {/* Main Content */}
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <Home />
 
-      <section id="about">
-        <About />
-      </section>
+        {/* About Section */}
+        <section id="about">
+          <About />
+        </section>
 
-      <section id="tracks">
-        <Tracks />
-      </section>
+        {/* Tracks Section */}
+        <section id="tracks">
+          <Tracks />
+        </section>
 
-      <section id="speaker">
-        <Speaker />
-      </section>
+        {/* Speaker Section */}
+        <section id="speaker">
+          <Speaker />
+        </section>
 
-      <section id="schedule">
-        <Schedule />
-      </section>
+        {/* FAQ Section */}
+        <section id="faq">
+          <FAQ />
+        </section>
 
-      <section id="faq">
-        <FAQ />
-      </section>
+        {/* Sponsors Section */}
+        <section id="sponsors">
+          <Sponsors />
+        </section>
+      </main>
 
-      <section id="sponsors">
-        <Sponsors />
-      </section>
-
-      <footer className="bg-gray-900 text-white text-center py-3 border-t border-green-700">
-        <p className="text-sm md:text-base">
-          Special thanks to HackDuke for providing the template! ❤️
-        </p>
+      {/* Footer Section */}
+      <footer className="bg-gray-900 text-white text-center">
+        <div className="py-4 border-t border-green-700/30">
+          <p className="text-sm md:text-base">
+            Special thanks to HackDuke for providing the template! ❤️
+          </p>
+        </div>
+        <div className="bg-black py-2 text-xs">
+          <p>© 2025 Hackabull</p>
+        </div>
       </footer>
-      
-      <BottomBar />
-    </>
+    </div>
   );
 }
 

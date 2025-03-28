@@ -5,11 +5,11 @@ import { H1 } from './typography';
 const SponsorLogo = ({ src, alt, className, url, noPadding=false}) => {
   return (
     <a href={url} className='z-50 block w-full h-full' target="_blank" rel="noopener noreferrer">
-      <div className="bg-[#6a717b] bg-opacity-60 w-full h-full aspect-video flex items-center justify-center rounded-sm">
+      <div className="bg-[#6a717b] bg-opacity-60 w-full h-full aspect-video flex items-center justify-center rounded-sm shadow-md">
         <img
           src={src}
           alt={alt}
-          className={`max-h-[75%] max-w-[75%] object-contain transform transition duration-200 hover:scale-110 ${!noPadding && 'p-2'}`}
+          className={`max-h-[75%] max-w-[75%] object-contain transform transition duration-300 hover:scale-110 ${!noPadding && 'p-2'}`}
         />
       </div>
     </a>
@@ -34,23 +34,21 @@ export const Sponsors = () => {
   ];
 
   return (
-    <section 
-      id="sponsors"
-      className="relative w-full py-12 pb-16 mb-0"
+    <div 
+      className="w-full bg-gradient-to-b from-green-800/60 to-gray-900/90 py-16 pb-20"
       style={{
         backgroundImage: `url('/image/backgrounds/sponsorsbackground.png')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        marginBottom: "-1px" // Ensures seamless connection with footer
       }}
     >
-      <div className="container mx-auto px-8 pb-4">
-        <H1 className="text-center mb-8">Sponsors</H1>
+      <div className="container mx-auto px-4 md:px-8">
+        <H1 className="text-center mb-10">Sponsors</H1>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl mx-auto">
           {allSponsors.map((sponsor, index) => (
-            <div key={index} className="w-full">
+            <div key={index} className="w-full p-2">
               <SponsorLogo 
                 src={sponsor.src} 
                 url={sponsor.url} 
@@ -60,10 +58,17 @@ export const Sponsors = () => {
           ))}
         </div>
         
-        <div className="text-center text-white text-base mt-8 pb-4">
-          <p>Interested in sponsoring? <a href="mailto:sponsorship@hackabull.com" className="underline hover:text-gray-200 font-semibold">Contact us</a></p>
+        <div className="text-center text-white mt-12 max-w-2xl mx-auto">
+          <h3 className="text-xl font-semibold mb-3">Interested in sponsoring?</h3>
+          <p className="mb-4">Join our roster of sponsors and support the next generation of innovators.</p>
+          <a 
+            href="mailto:shpe.hackabull@gmail.com" 
+            className="inline-block px-6 py-2 bg-green-700/50 hover:bg-green-700/70 transition-colors rounded-md text-white font-semibold"
+          >
+            Contact us
+          </a>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
