@@ -16,7 +16,7 @@ export const FAQ = () => {
     >
       <Panel className="h-full">
         <div className="absolute w-full top-[5vh] z-10">
-          <H1 className='text-center mb-30'>FAQ</H1>
+          <H1 className='text-center mb-30 font-quicksand'>FAQ</H1>
         </div>
         {/* This container hosts the jellyfish images */}
         <JellyFish />
@@ -67,7 +67,7 @@ export const FAQ = () => {
 
 export const ListTitle = ({ title }) => {
   return (
-    <h2 className={'glow text-center mb-2 text-[#D4CDF4] text-[3vw] md:text-3xl font-bold brightness-125'}>
+    <h2 className={'glow text-center mb-2 text-[#D4CDF4] text-[3vw] md:text-3xl font-quicksand font-bold brightness-125 tracking-wide'}>
       {title}
     </h2>
   )

@@ -20,8 +20,14 @@ module.exports = {
       white: '#FFF',
       black: '#170738',
       navbar: '#010104',
-      about_ticket_text:'#D2CCFC'
-
+      about_ticket_text:'#D2CCFC',
+      forest: '#1D4B38',
+      emerald: '#1A5653',
+      deepPurple: '#2A2550',
+      darkBrown: '#3B2A1D',
+      richBrown: '#4A312C',
+      midnight: '#141E46',
+      slate: '#2C3333'
     },
     extend: {
       keyframes: { /* only way to apply allow animation on hover */
@@ -46,7 +52,10 @@ module.exports = {
         'Monaco',
         'Consolas',
         'Courier New'
-      ]
+      ],
+      quicksand: ['Quicksand', 'ui-sans-serif', 'system-ui'],
+      montalt: ['Montserrat Alternates', 'ui-sans-serif', 'system-ui'],
+      nunito: ['Nunito', 'ui-sans-serif', 'system-ui']
     }
   },
   plugins: [require('tailwindcss-motion'), require('taos/plugin')], 
