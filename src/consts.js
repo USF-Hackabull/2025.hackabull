@@ -1,43 +1,53 @@
-const GENERAL_QUESTIONS = [
+export const GENERAL_QUESTIONS = [
   {
-    title: 'when is the application deadline?',
-    content: 'Applications will close on Friday, January 31st at 11:59 PM ET, and all decisions will be released by Saturday, February 1st. We hope to see everyone there, so please make sure to apply!',
+    title: "What is a hackathon?",
+    content: "A hackathon is a collaborative event where students come together to build tech projects like websites, apps, games, or hardware hacks within a limited time, typically 24 hours. It's a chance to learn new skills, meet other tech enthusiasts, and bring your ideas to life."
   },
   {
-    title: 'who can I work with?',
-    content: 'You are welcome to work with anyone! Working alone is an option, but we highly recommend working with a team so you can get to know your fellow programmers! Teams can have at most 4 students, no exceptions. If you don’t have a team coming in and would like to make one, we will host a team formation mixer where you’ll be able to find teammates and make new friends!',
+    title: "What if I'm new to coding or don't have a team?",
+    content: "No problem at all. Hackabull is beginner-friendly and welcomes students of all experience levels. We'll have team formation activities, plus workshops and mentors to help guide you. Many hackers come solo and leave with new friends and teammates."
   },
   {
-    title: "what if I'm new to coding?",
-    content: 'We encourage everyone to apply, regardless of their background in tech! Code for good is the perfect opportunity to learn. Even if you have limited coding or technical experience, we will have plenty of beginner-friendly workshops as well as mentors to introduce you to a plethora of tools and technologies and help out if you ever get stuck or run out of ideas.',
+    title: "Will there be prizes?",
+    content: "Yes. We'll be offering awesome prizes for top projects, sponsor challenges, and more. Whether you build something impressive, innovative, or just plain fun, there's a chance to win something cool."
   },
   {
-    title: 'will there be prizes?',
-    content: 'Yes! There will be a grand prize and novice winners for each track. In addition, there will also be many company-sponsored prizes. These often come with the requirement that you incorporate certain technologies into your project. Please check the prizes page and devpost for specifics!',
+    title: "Can I bring my own hardware?",
+    content: "Absolutely. If you're working on a hardware project, feel free to bring devices like Raspberry Pis, Arduinos, or other components. Just make sure your setup is portable and doesn't interfere with others."
   },
   {
-    title: 'what is the code of conduct?',
-    content: 'Participants in Code For Good are expected to adhere to the Duke Community Standard and the MLH Code of Conduct (https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md). Failure to comply with these rules may result in removal from the event and potential restrictions on participation in future Code for Good and other HackDuke events.'
-  },
+    title: "What is the code of conduct?",
+    content: "We follow the MLH Code of Conduct, which emphasizes respect and safety for everyone. Harassment or discrimination of any kind is not tolerated. We're here to create a welcoming space for all."
+  }
 ];
 
-const LOGISTICS_QUESTIONS = [
+export const LOGISTICS_QUESTIONS = [
   {
-    title: 'when? where?',
-    content: 'Code for Good will kick off Saturday, February 9th at 9:00 AM EST and end Sunday, February 10th 5:00 PM EST. The event will be hosted on Duke University’s West Campus in the Fuqua School of Business. All links and additional info will be included in our hacker guide, which will be sent out before the event begins.',
+    title: "When and where is Hackabull?",
+    content: "Hackabull will take place on April 12–13, 2025 at the Nault Center for Entrepreneurship on the University of South Florida campus."
   },
   {
-    title: 'what should I bring?',
-    content: 'Bring your laptop, chargers, ethernet cables (or just use Wi-Fi), potential toiletries/sleeping bags, and a spirit to Code for Good!',
+    title: "How long is Hackabull?",
+    content: "It's a 24-hour hackathon. Hacking starts Saturday and ends Sunday, with opening ceremonies, workshops, and breaks throughout. Make sure to check in early to get the full experience."
   },
   {
-    title: 'who can participate?',
-    content: 'All students (undergraduate or graduate) 18 years or older can participate. If you are a new grad, we’d love to have you as well! We aim to be beginner-friendly, so all are welcome!',
+    title: "Who can participate?",
+    content: "Hackabull is open to university and college students. You do not need to be a computer science major. All disciplines and experience levels are welcome."
   },
   {
-    title: 'what can I make?',
-    content: 'We welcome all software and hardware hacks that align with our tracks. Our mission is to code for social good, so make sure to create a project that is impactful for the track you have chosen! We will also have lab space and limited equipment available for hardware projects.',
+    title: "Will food be provided?",
+    content: "Yes. We've got you covered with free meals, snacks, and drinks throughout the weekend. We'll also do our best to accommodate dietary needs. Just let us know in advance."
   },
+  {
+    title: "Will there be a place to sleep?",
+    content: "Yes. There will be a quiet area designated for resting or taking a nap. Bring a blanket, pillow, or sleeping bag if you plan to stay overnight."
+  },
+  {
+    title: "How much does it cost?",
+    content: "Hackabull is free to attend! Thanks to our amazing sponsors, we're able to cover meals, swag, workshops, and everything else. Just bring your ideas and energy!"
+  },
+  {
+    title: "Will transportation be provided?",
+    content: "Unfortunately, transportation and travel reimbursements will not be provided this year. All participants are responsible for their own travel arrangements to and from the event."
+  }
 ];
-
-export { GENERAL_QUESTIONS, LOGISTICS_QUESTIONS };

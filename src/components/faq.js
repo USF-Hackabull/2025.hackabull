@@ -1,35 +1,25 @@
 import { GENERAL_QUESTIONS, LOGISTICS_QUESTIONS } from "../consts";
 import Accordion from "./accordion";
-import { Panel } from "./panel";
 import { Title } from "./typography";
 
 export const FAQ = () => {
   return (
     <div
-      className={`relative w-full h-auto`}
+      className="relative w-full py-16 bg-cover md:bg-[length:100%_100%]"
       style={{
         backgroundImage: `url('/image/backgrounds/faqbackground.png')`,
-        backgroundSize: "100% 100%",
-        backgroundPosition: "top",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        aspectRatio: "16/9",
       }}
     >
-      <div className="h-full">
-        <div className="absolute w-full top-[5vh] z-10">
-          <Title className="text-center mb-30">FAQ</Title>
-        </div>
-        {/* This container hosts the jellyfish images */}
-        {/* <JellyFish /> */}
+      <div className="container mx-auto px-4 relative">
+        <Title className="text-center">FAQ</Title>
 
-        {/* The two columns with custom widths */}
-        <div className="absolute flex justify-between w-full left-1/2 -translate-x-1/2 top-[30%] md:top-[20%] z-30">
-          {/* Empty Space - 1/7 width */}
-          <div className="w-[14.2857%]" />
-
-          {/* First Column - 2/7 width */}
-          <div className="w-[28.5714%] pt-8 flex align-center flex-col max-w-[45vw] md:mr-4">
-            <ListTitle title="General" />
+        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 max-w-6xl mx-auto mb-12 relative z-20">
+          <div className="w-full md:w-1/2 bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-6">
+            <h2 className="text-center mb-6 text-[#D4CFF4] text-2xl md:text-3xl font-quicksand font-bold tracking-wide">
+              General
+            </h2>
             <Accordion
               items={GENERAL_QUESTIONS.map((question) => ({
                 title: question.title,
@@ -38,12 +28,10 @@ export const FAQ = () => {
             />
           </div>
 
-          {/* Empty Space (Distance between columns) - 1/7 width */}
-          <div className="w-[14.2857%]" />
-
-          {/* Second Column - 2/7 width */}
-          <div className="w-[28.5714%] md:pt-8 flex align-center flex-col max-w-[45vw]">
-            <ListTitle title="Logistics" />
+          <div className="w-full md:w-1/2 bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-6">
+            <h2 className="text-center mb-6 text-[#D4CFF4] text-2xl md:text-3xl font-quicksand font-bold tracking-wide">
+              Logistics
+            </h2>
             <Accordion
               items={LOGISTICS_QUESTIONS.map((question) => ({
                 title: question.title,
@@ -51,83 +39,28 @@ export const FAQ = () => {
               }))}
             />
           </div>
-
-          {/* Empty Space - 1/7 width */}
-          <div className="w-[14.2857%]" />
         </div>
-
-        {/* <img
-          src="/images/Ray.png"
-          alt="Ray"
-          className="float2 absolute z-20 w-[30vw] right-[5vw] bottom-[0vw] md:bottom-[5vw] md:right-[5vw]"
-        /> */}
       </div>
     </div>
   );
 };
 
-export const ListTitle = ({ title }) => {
-  return (
-    <h2
-      className={
-        "glow text-center mb-2 text-[#D4CDF4] text-[3vw] md:text-3xl font-bold brightness-125"
-      }
-    >
-      {title}
-    </h2>
-  );
-};
-
-export const JellyFish = () => (
-  <div>
-    <img
-      src="/images/PinkJelly.png"
-      alt="Pink Jellyfish"
-      className="float1 absolute z-20 w-[20vw] left-[0vw] top-[vw]"
-    />
-    <img
-      src="/images/BlueJelly.png"
-      alt="Blue Jellyfish"
-      className="float2 absolute z-20 w-[17vw] bottom-[5vw] left-[15vw]"
-    />
-  </div>
-);
-
 export const MusicNotes = () => (
-  <div>
+  <div className="pointer-events-none absolute top-0 left-0 opacity-25">
     <img
       src="/images/MusicNote.svg"
       alt="Music Note"
-      className="w-6 absolute left-[16rem]"
+      className="w-6 absolute left-[5%] top-[5%]"
     />
     <img
       src="/images/MusicNote.svg"
       alt="Music Note"
-      className="w-12 absolute left-[20rem] top-12"
+      className="w-4 absolute right-[5%] top-[10%]"
     />
-
     <img
       src="/images/MusicNote.svg"
       alt="Music Note"
-      className="w-8 absolute right-[48%] bottom-16"
-    />
-
-    <img
-      src="/images/MusicNote.svg"
-      alt="Music Note"
-      className="w-4 absolute right-[20%] bottom-40"
-    />
-
-    <img
-      src="/images/MusicNote.svg"
-      alt="Music Note"
-      className="w-4 absolute right-60 bottom-20"
-    />
-
-    <img
-      src="/images/MusicNote.svg"
-      alt="Music Note"
-      className="w-4 absolute right-12 bottom-48"
+      className="w-8 absolute left-[10%] bottom-[10%]"
     />
   </div>
 );
