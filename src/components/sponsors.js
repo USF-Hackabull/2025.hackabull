@@ -26,6 +26,7 @@ export const Sponsors = () => {
     { src: "/image/sponsors/NextEraEnergy.png", url: "https://www.nexteraenergy.com/", alt: "NextEra Energy" },
     { src: "/image/sponsors/StandOutStickers.png", url: "https://www.standoutstickers.com/", alt: "StandOutStickers" },
     { src: "/image/sponsors/Mosaic.svg", url: "https://www.mosaic.com/", alt: "Mosaic" },
+    { src: "/image/sponsors/SolusCode.png", url: "https://www.soluscode.com/", alt: "SolusCode" },
     { src: "/image/sponsors/RaymondJames.png", url: "https://www.raymondjames.com/", alt: "Raymond James" },
     { src: "/image/sponsors/Slalom.svg", url: "https://www.slalom.com/", alt: "Slalom" },
     { src: "/image/sponsors/Lithionics.png", url: "https://lithionics.com/", alt: "Lithionics" },
