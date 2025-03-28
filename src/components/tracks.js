@@ -29,7 +29,7 @@ export const Tracks = () => {
   // TODO: Responsiveness
   return (
     <div
-      className={`relative w-full h-[60vw]`}
+      className={`relative w-full h-[80vw] md:h-[70vw]`}
       style={{
         backgroundImage: `url('/image/backgrounds/tracksbackground.png')`,
         backgroundSize: "cover",
@@ -43,24 +43,24 @@ export const Tracks = () => {
         title="Cybersecurity"
         image_src="/image/tracks/track1.png"
         image_alt="Crab"
-        widthClass="w-[30vw]"
-        imageWidthClass="w-[14vw]"
+        widthClass="w-[30vw] md:w-[25vw]"
+        imageWidthClass="w-[25vw] md:w-[22vw]"
         leftClass="left-1/2"
         topClass="top-1/2"
         rightClass="right-auto"
         bottomClass="bottom-auto"
         className="transform -translate-x-1/2 -translate-y-1/2"
       />
-
+  
       {/* Left Top Track */}
       <Track
         title="Fintech"
         image_src="/image/tracks/track2.png"
         image_alt="Turtle"
-        widthClass="w-[25vw]"
-        imageWidthClass="w-[15vw]"
-        leftClass="left-[10vw]"
-        topClass="top-[15vh]"
+        widthClass="w-[25vw] md:w-[20vw]"
+        imageWidthClass="w-[35vw] md:w-[30vw]"
+        leftClass="left-[8vw] md:left-[5vw]"
+        topClass="top-[25vh] md:top-[20vh]"
         rightClass="right-auto"
         bottomClass="bottom-auto"
       />
@@ -70,10 +70,10 @@ export const Tracks = () => {
         title="Healthcare"
         image_src="/image/tracks/track3.png"
         image_alt="Whale"
-        widthClass="w-[30vw]"
-        imageWidthClass="w-[22vw]"
-        rightClass="right-[10vw]"
-        topClass="top-[15vh]"
+        widthClass="w-[30vw] md:w-[25vw]"
+        imageWidthClass="w-[35vw] md:w-[30vw]"
+        rightClass="right-[8vw] md:right-[5vw]"
+        topClass="top-[25vh] md:top-[20vh]"
         leftClass="left-auto"
         bottomClass="bottom-auto"
       />
@@ -83,10 +83,10 @@ export const Tracks = () => {
         title="Sustainability"
         image_src="/image/tracks/track4.png"
         image_alt="Generic Fish"
-        widthClass="w-[25vw]"
-        imageWidthClass="w-[18vw]"
-        leftClass="left-[10vw]"
-        bottomClass="bottom-[15vh]"
+        widthClass="w-[25vw] md:w-[20vw]"
+        imageWidthClass="w-[35vw] md:w-[30vw]"
+        leftClass="left-[8vw] md:left-[5vw]"
+        bottomClass="bottom-[25vh] md:bottom-[20vh]"
         rightClass="right-auto"
         topClass="top-auto"
       />
@@ -96,10 +96,10 @@ export const Tracks = () => {
         title="Automation"
         image_src="/image/tracks/track5.png"
         image_alt="Crab"
-        widthClass="w-[25vw]"
-        imageWidthClass="w-[18vw]"
-        rightClass="right-[10vw]"
-        bottomClass="bottom-[15vh]"
+        widthClass="w-[25vw] md:w-[20vw]"
+        imageWidthClass="w-[35vw] md:w-[30vw]"
+        rightClass="right-[8vw] md:right-[5vw]"
+        bottomClass="bottom-[25vh] md:bottom-[20vh]"
         leftClass="left-auto"
         topClass="top-auto"
       />
