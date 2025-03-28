@@ -72,7 +72,7 @@ function App() {
       <footer className="bg-gray-900 text-white text-center">
         <div className="py-4 border-t border-green-700/30">
           <p className="text-sm md:text-base">
-            Special thanks to HackDuke for providing the template! ❤️
+            Made with 💚 by the Hackabull team with support from our friends at HackDuke
           </p>
         </div>
         <div className="bg-black py-2 text-xs">
