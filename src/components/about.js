@@ -23,7 +23,7 @@ export const About = () => {
             </div>
             
             <p className="text-xl md:text-2xl text-white leading-relaxed mb-10">
-              Hackabull is Tampa's largest hackathon, bringing students together for 24 hours of building, learning, and collaboration. Whether you're just getting started or have experience, this is a space where your ideas can take shape. Join us and bring your idea to life.
+              Hackabull is Tampa's largest hackathon, bringing students together for 24 hours of building, learning, and collaboration. Whether you're just getting started or have experience, this is a space where your ideas can take shape. Join us and bring your idea to life!
             </p>
             
             <div className="mt-8">
