@@ -1,8 +1,5 @@
 import React from "react";
-import { Panel } from "./panel";
 import { Title } from "./typography";
-import React from "react";
-import { H1 } from "./typography";
 
 // Reusable SponsorLogo Component
 const SponsorLogo = ({ src, alt, className, url, noPadding = false }) => {
@@ -98,7 +95,7 @@ export const Sponsors = () => {
       }}
     >
       <div className="container mx-auto px-4 md:px-8">
-        <H1 className="text-center mb-10">Sponsors</H1>
+        <Title className="text-center mb-10">Sponsors</Title>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl mx-auto">
           {allSponsors.map((sponsor, index) => (

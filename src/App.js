@@ -3,11 +3,9 @@ import { Navbar } from "./components/navbar";
 import { Home } from "./components/home";
 import { About } from "./components/about";
 import { Tracks } from "./components/tracks";
-import { Schedule } from "./components/schedule";
 import { FAQ } from "./components/faq";
 import { Sponsors } from "./components/sponsors";
 import { Speaker } from "./components/speaker";
-import { Backdrop } from "./components/backdrop";
 
 function App() {
   return (
@@ -50,10 +48,6 @@ function App() {
       <section id="speaker">
         <Speaker />
       </section>
-
-      {/* <section id="schedule">
-        <Schedule />
-      </section> */}
 
       <section id="faq">
         <FAQ />
