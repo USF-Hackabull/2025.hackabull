@@ -18,7 +18,6 @@ const ApplyButton = ({ isMobile }) => {
     </a>
   );
 };
-
 const NavLink = ({ sectionId, title }) => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -28,7 +27,10 @@ const NavLink = ({ sectionId, title }) => {
   };
 
   return (
-    <button onClick={() => scrollToSection(sectionId)}>
+    <button
+      onClick={() => scrollToSection(sectionId)}
+      className="transition-all duration-300 ease-in-out hover:bg-white hover:shadow-md rounded-md p-2 hover:scale-105"
+    >
       <Text>{title}</Text>
     </button>
   );
@@ -58,7 +60,7 @@ const NavLinks = ({ isMobile }) => {
           <ApplyButton isMobile />
         </div>
       ) : (
-        <div className="flex text-2xl gap-8">
+        <div className="flex text-2xl gap-8 items-center">
           {links.map((link) => {
             return (
               <NavLink

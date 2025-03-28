@@ -22,25 +22,24 @@ export const About = () => {
                 alt="Hackabull Logo"
                 className="w-16 h-16 mr-4"
               />
-              <h1 className="text-6xl font-bold text-white">About Us</h1>
+              <Title>About Us</Title>
             </div>
 
-            <p className="text-xl md:text-2xl text-white leading-relaxed mb-10">
+            <Text>
               Hackabull is Tampa's largest hackathon, bringing students together
               for 24 hours of building, learning, and collaboration. Whether
               you're just getting started or have experience, this is a space
               where your ideas can take shape. Join us and bring your idea to
               life.
-            </p>
+            </Text>
 
-            <div className="mt-8">
-              <a
-                href="#faq"
-                className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-all shadow-lg"
-              >
-                FAQ
-              </a>
-            </div>
+            <a
+              href="#faq"
+              className="my-4 inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-lg transition-all duration-300 ease-in-out shadow-md 
+             hover:bg-white hover:text-[#254017] hover:shadow-lg hover:scale-105"
+            >
+              FAQ
+            </a>
           </div>
 
           {/* Right side - Hackathon image */}
