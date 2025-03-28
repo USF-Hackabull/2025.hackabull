@@ -1,4 +1,4 @@
-import { H1 } from "./typography";
+import { Title, Text } from "./typography";
 import { motion } from "framer-motion";
 
 export const Speaker = () => {
@@ -7,14 +7,14 @@ export const Speaker = () => {
       className="relative w-full h-auto"
       style={{
         backgroundImage: `url('/image/backgrounds/speakersbackground.png')`,
-        backgroundSize: "cover",
+        backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         aspectRatio: "16 / 9",
       }}
     >
       <div
-        className="absolute z-20 -top-20 text-center w-full"
+        className="absolute z-20 -top-5 md:-top-10 text-center w-full"
         style={{ zIndex: 2 }}
       >
         <motion.img
@@ -26,11 +26,11 @@ export const Speaker = () => {
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         />
         <div
-          className="absolute inset-0 flex items-center justify-center z-20 flex flex-col"
+          className="absolute inset-0 flex items-center justify-center z-20 flex flex-col -top-[20dvw]"
           style={{ zIndex: 2 }}
         >
-          <H1 className="text-center mb-8">Speakers</H1>
-          <h2 className="text-3xl font-bold text-black">Coming soon</h2>
+          <Title>Speakers</Title>
+          <Text>Coming soon</Text>
         </div>
       </div>
     </div>
