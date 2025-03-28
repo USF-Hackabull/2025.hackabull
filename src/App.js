@@ -9,8 +9,7 @@ import { Speaker } from "./components/speaker";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-black overflow-hidden">
-      {/* MLH Trust Badge */}
+    <>
       <a
         id="mlh-trust-badge"
         style={{
@@ -34,33 +33,25 @@ function App() {
         />
       </a>
 
-      {/* Navigation */}
       <Navbar />
 
-      {/* Main Content */}
-      <main className="flex-grow">
-        {/* Hero Section */}
-        <Home />
+      <Home />
 
-        {/* About Section */}
-        <section id="about">
-          <About />
-        </section>
+      <section id="about">
+        <About />
+      </section>
 
-        {/* Tracks Section */}
-        <section id="tracks">
-          <Tracks />
-        </section>
+      <section id="tracks">
+        <Tracks />
+      </section>
 
-        {/* Speaker Section */}
-        <section id="speaker">
-          <Speaker />
-        </section>
+      <section id="speaker">
+        <Speaker />
+      </section>
 
-        {/* FAQ Section */}
-        <section id="faq">
-          <FAQ />
-        </section>
+      <section id="faq">
+        <FAQ />
+      </section>
 
         {/* Sponsors Section */}
         <section id="sponsors">

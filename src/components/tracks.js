@@ -1,5 +1,4 @@
-import { Panel } from "./panel";
-import { H1 } from "./typography";
+import { Title } from "./typography";
 
 const Track = ({
   title,
@@ -19,7 +18,9 @@ const Track = ({
       className={`absolute z-20 flex flex-col items-center ${widthClass} ${leftClass} ${bottomClass} ${rightClass} ${topClass} ${className}`}
     >
       <div className="relative">
-        <h3 className="absolute top-[-0.5rem] left-1/2 transform -translate-x-1/2 text-sm md:text-3xl text-white text-center whitespace-nowrap">{title}</h3>
+        <h3 className="absolute top-[-0.5rem] left-1/2 transform -translate-x-1/2 text-sm md:text-3xl text-white text-center whitespace-nowrap">
+          {title}
+        </h3>
         <img src={image_src} alt={image_alt} className={imageWidthClass} />
       </div>
     </div>
@@ -34,11 +35,12 @@ export const Tracks = () => {
       className={`relative w-full h-[120vw] md:h-[100vw]`}
       style={{
         backgroundImage: `url('/image/backgrounds/tracksbackground.png')`,
-        backgroundSize: "cover",
-        backgroundPosition: "top",
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <H1 className="text-center mb-8">Tracks</H1>
+      <Title className="text-center mb-8">Tracks</Title>
 
       {/* Center Track */}
       <Track
@@ -53,7 +55,7 @@ export const Tracks = () => {
         bottomClass="bottom-auto"
         className="transform -translate-x-1/2 -translate-y-1/2"
       />
-  
+
       {/* Left Top Track */}
       <Track
         title="Fintech"

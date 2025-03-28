@@ -38,7 +38,7 @@ export const Home = () => {
         />
         <a
           href="https://portal.hackduke.org/"
-          className="text-2xl bg-gradient-to-b from-[#A414B5] to-[#540A5D] pl-8 pr-8 pt-1 pb-1 rounded-xl mt-5 z-50 transform transition duration-200 hover:scale-105"
+          className="text-2xl bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl mt-5 z-50 transform transition duration-200 hover:scale-105"
         >
           Apply Now!
         </a>
