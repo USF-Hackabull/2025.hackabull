@@ -1,68 +1,69 @@
 import React from 'react';
-import { Panel } from './panel';
 import { H1 } from './typography';
 
 // Reusable SponsorLogo Component
 const SponsorLogo = ({ src, alt, className, url, noPadding=false}) => {
   return (
-    <a href={url} className='z-50' target="_blank" rel="noopener noreferrer">
-      <img
-        src={src}
-        alt={alt}
-        className={`bg-white bg-opacity-35 rounded-md ${className} w-full transform transition duration-200 hover:scale-105 ${!noPadding && 'p-2'}`}
-      />
+    <a href={url} className='z-50 block w-full h-full' target="_blank" rel="noopener noreferrer">
+      <div className="bg-[#6a717b] bg-opacity-60 w-full h-full aspect-video flex items-center justify-center rounded-sm">
+        <img
+          src={src}
+          alt={alt}
+          className={`max-h-[75%] max-w-[75%] object-contain transform transition duration-200 hover:scale-110 ${!noPadding && 'p-2'}`}
+        />
+      </div>
     </a>
   );
 };
 
 export const Sponsors = () => {
+  // Define all sponsors in a single array for consistent handling
+  const allSponsors = [
+    { src: "/image/sponsors/Pfizer.png", url: "https://www.pfizer.com/about", alt: "Pfizer" },
+    { src: "/image/sponsors/Amazon.png", url: "https://www.amazon.com/", alt: "Amazon" },
+    { src: "/image/sponsors/MLH_Hacking.png", url: "https://mlh.io/", alt: "MLH" },
+    { src: "/image/sponsors/JohnsonAndJohnson.png", url: "https://www.jnj.com/", alt: "Johnson and Johnson" },
+    { src: "/image/sponsors/NextEraEnergy.png", url: "https://www.nexteraenergy.com/", alt: "NextEra Energy" },
+    { src: "/image/sponsors/StandOutStickers.png", url: "https://www.standoutstickers.com/", alt: "StandOutStickers" },
+    { src: "/image/sponsors/Mosaic.svg", url: "https://www.mosaic.com/", alt: "Mosaic" },
+    { src: "/image/sponsors/RaymondJames.png", url: "https://www.raymondjames.com/", alt: "Raymond James" },
+    { src: "/image/sponsors/Slalom.svg", url: "https://www.slalom.com/", alt: "Slalom" },
+    { src: "/image/sponsors/Lithionics.png", url: "https://lithionics.com/", alt: "Lithionics" },
+    { src: "/image/sponsors/CAE.png", url: "https://www.cae.com/", alt: "CAE" },
+    { src: "/image/sponsors/CSE.webp", url: "https://www.usf.edu/ai-cybersecurity-computing/index.aspx", alt: "CSE" }
+  ];
+
   return (
-    <div
-      className={`relative w-full h-[60vw]`}
+    <section 
+      id="sponsors"
+      className="relative w-full py-12 pb-16 mb-0"
       style={{
         backgroundImage: `url('/image/backgrounds/sponsorsbackground.png')`,
         backgroundSize: "cover",
-        backgroundPosition: "top",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        marginBottom: "-1px" // Ensures seamless connection with footer
       }}
     >
-    <Panel className='h-[70vw]'>
-      <div className="ml-[5vw] mr-[5vw]">
-        <H1>Sponsors</H1>
-        <div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-          <div className="flex flex-row gap-[1vw] w-full">
-            <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
-              <SponsorLogo src="/image/sponsors/Pfizer.png" url="https://www.pfizer.com/about" alt="Pfizer" className='focus-visible:animate-bounce'/>
-              <SponsorLogo src="/image/sponsors/NextEraEnergy.png" url="https://www.nexteraenergy.com/" alt="NextEra Energy" className='focus-visible:animate-bounce'/>
-							{/* <SponsorLogo src="/image/sponsors/MathWorks.png" url="https://www.mathworks.com/" alt="MathWorks"/>
-              <SponsorLogo src="/images/sponsors/endex.png" url="https://endex.ai/" alt="Endex"/> */}
+      <div className="container mx-auto px-8 pb-4">
+        <H1 className="text-center mb-8">Sponsors</H1>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
+          {allSponsors.map((sponsor, index) => (
+            <div key={index} className="w-full">
+              <SponsorLogo 
+                src={sponsor.src} 
+                url={sponsor.url} 
+                alt={sponsor.alt} 
+              />
             </div>
-            <div className='flex flex-1 flex-col gap-[1vw]'>
-              <SponsorLogo src="/image/sponsors/StandOutStickers.png" url="https://www.standoutstickers.com/" alt="StandOutStickers"/>
-              {/* <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" url="https://entrepreneurship.duke.edu/" alt="Duke I&E"/>
-              <SponsorLogo src="/images/sponsors/iiD.png" url="https://bigdata.duke.edu/" alt="Duke Rhodes Information Initiative"/>
-              <SponsorLogo src="/images/sponsors/CoLab.png" url="https://colab.duke.edu/" alt="Duke Innovation CoLab"/>
-              <SponsorLogo src="/images/sponsors/Pratt.png" url="https://pratt.duke.edu/" alt="Pratt"/>
-              <SponsorLogo src="/images/sponsors/RedBull.svg" url="https://www.redbull.com/" alt="RedBull"/>
-            	<SponsorLogo src="/images/sponsors/Warp.svg" url="https://www.warp.dev/" alt="Warp"/> */}
-            </div>
-            <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
-              <SponsorLogo src="/image/sponsors/Slalom.svg" url="https://www.slalom.com/" alt="Slalom"/>
-              <SponsorLogo src="/image/sponsors/Lithionics.png" url="https://lithionics.com/" alt="Lithionics"/>
-              {/* <SponsorLogo src="/images/sponsors/Monster.webp" url="https://www.monsterenergy.com/" alt="Monster"/>
-              <SponsorLogo src="/images/sponsors/CardsAgainstHumanity.svg" url="https://www.cardsagainsthumanity.com/" alt="CardsAgainstHumanity"/>
-              {<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers" className="pt-[1vw]" noPadding/>} */}
-            </div>
-            <div className='flex flex-1 flex-col gap-[1vw]'>
-              <SponsorLogo src="/image/sponsors/MLH_Hacking.png" url="https://mlh.io/" alt="MLH"/>
-              {/* <SponsorLogo src="/images/sponsors/Telora.jpeg" url="https://telora.com/" alt="Telora"/>
-              <SponsorLogo src="/images/sponsors/Keebio.webp" url="https://keeb.io/" alt="Keebio"/> */}
-            </div>
-            <div className='flex flex-[0.5]'/>
-          </div>
+          ))}
         </div>
         
+        <div className="text-center text-white text-base mt-8 pb-4">
+          <p>Interested in sponsoring? <a href="mailto:sponsorship@hackabull.com" className="underline hover:text-gray-200 font-semibold">Contact us</a></p>
+        </div>
       </div>
-    </Panel>
-    </div>
+    </section>
   );
 };

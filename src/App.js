@@ -9,6 +9,13 @@ import { Sponsors } from "./components/sponsors";
 import { Speaker } from "./components/speaker";
 import { Backdrop } from "./components/backdrop";
 
+// Bottom bar component that appears at the very bottom of the page
+const BottomBar = () => (
+  <div className="bg-black text-white text-center py-1 text-xs border-t border-gray-800">
+    <p>© 2025 Hackabull</p>
+  </div>
+);
+
 function App() {
   return (
     <>
@@ -63,11 +70,13 @@ function App() {
         <Sponsors />
       </section>
 
-      <div className="h-[20vw] flex justify-center">
-        <h1 className="absolute bottom-10 text-white text-[2vw] z-50">
-          Special thanks to HackDuke for providing the template! ❤️{" "}
-        </h1>
-      </div>
+      <footer className="bg-gray-900 text-white text-center py-3 border-t border-green-700">
+        <p className="text-sm md:text-base">
+          Special thanks to HackDuke for providing the template! ❤️
+        </p>
+      </footer>
+      
+      <BottomBar />
     </>
   );
 }
