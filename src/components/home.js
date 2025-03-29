@@ -25,24 +25,40 @@ export const Home = () => {
     >
       <motion.div
         style={{ y: textY }}
-        className="flex flex-col items-center justify-center h-screen text-white overflow-hidden w-full relative max-w-full z-30"
+        className="flex flex-col items-center justify-center h-screen overflow-hidden w-full relative max-w-full z-30"
       >
         <img
           className="z-20 flex object-contain max-h-full h-48"
           src="/image/landing-hackabull.png"
-          alt="Hack Duke"
-        ></img>
-        <h1 className="text-2xl z-50"> 04.12.2025 </h1>
-        <h1 className="mt-5 text-2xl z-50"> application closes in</h1>
+          alt="Hackabull"
+        />
+        <h1 
+          className="text-2xl z-50 font-bold" 
+          style={{ 
+            color: '#FFFFFF',
+            textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.5)'
+          }}
+        > 
+          04.12.2025 - 04.13.2025 
+        </h1>
+        <h1 
+          className="mt-5 text-2xl z-50 font-bold" 
+          style={{ 
+            color: '#FFFFFF',
+            textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.5)'
+          }}
+        > 
+          application closes in
+        </h1>
         <Countdown
           date={new Date("2025-04-11T23:59:00")}
           renderer={CountdownRenderer}
         />
         <a
           href="https://lu.ma/9e1x29r4"
-          target="_blank"
+          target="_blank" 
           rel="noopener noreferrer"
-          className="text-2xl bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl mt-5 z-50 transform transition duration-200 hover:scale-105"
+          className="text-2xl bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl mt-5 z-50 transform transition duration-200 hover:scale-105 font-bold"
         >
           Apply Now!
         </a>
