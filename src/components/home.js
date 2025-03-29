@@ -37,7 +37,9 @@ export const Home = () => {
           renderer={CountdownRenderer}
         />
         <a
-          href="https://portal.hackduke.org/"
+          href="https://lu.ma/9e1x29r4"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-2xl bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl mt-5 z-50 transform transition duration-200 hover:scale-105"
         >
           Apply Now!

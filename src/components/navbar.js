@@ -5,7 +5,7 @@ import { Text } from "./typography";
 
 const ApplyButton = ({ isMobile }) => {
   return (
-    <a href="https://portal.hackduke.org/">
+    <a href="https://lu.ma/9e1x29r4" target="_blank" rel="noopener noreferrer">
       <button
         className={`text-white ${
           isMobile
