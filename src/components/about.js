@@ -16,11 +16,6 @@ export const About = () => {
           {/* Left side - About Us text */}
           <div className="w-full md:w-1/2 text-center md:text-left md:my-10">
             <div className="flex items-center justify-center md:justify-start">
-              <img
-                src="/hackabull-favicon.png"
-                alt="Hackabull Logo"
-                className="w-16 h-16 mr-4"
-              />
               <Title>About Us</Title>
             </div>
 
