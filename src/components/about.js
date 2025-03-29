@@ -23,8 +23,8 @@ export const About = () => {
               Hackabull is Tampa's largest hackathon, bringing students together
               for 24 hours of building, learning, and collaboration. Whether
               you're just getting started or have experience, this is a space
-              where your ideas can take shape. Join us and bring your idea to
-              life.
+              where your ideas can take shape. Join us and bring your ideas to
+              life!
             </Text>
 
             <a
