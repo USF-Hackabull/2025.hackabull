@@ -35,11 +35,13 @@ export const Home = () => {
         <h1 className="text-2xl z-50"> 04.12.2025 </h1>
         <h1 className="mt-5 text-2xl z-50"> application closes in</h1>
         <Countdown
-          date={new Date("2025-04-01T23:59:00")}
+          date={new Date("2025-04-11T23:59:00")}
           renderer={CountdownRenderer}
         />
         <a
-          href="https://portal.hackduke.org/"
+          href="https://lu.ma/9e1x29r4"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-2xl bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl mt-5 z-50 transform transition duration-200 hover:scale-105"
         >
           Apply Now!
