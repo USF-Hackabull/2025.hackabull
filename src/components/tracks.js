@@ -30,6 +30,11 @@ const Track = ({
 export const Tracks = () => {
   // TODO: Lighting
   // TODO: Responsiveness
+  //Globe w leaf - sustainability 
+  //Square w dollar sign - fintech
+  //Tree with lock - cybersecurity
+  //Heart with hand - healthcare
+  //Gear - automation
   return (
     <div
       className={`relative w-full h-[120vw] md:h-[100vw]`}
