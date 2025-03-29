@@ -9,7 +9,8 @@ const Typography = ({ as: Component = "p", children, className, ...props }) => {
 export const Title = ({ children, className = "", ...props }) => (
   <Typography
     as="h1"
-    className={`text-[#C1413E] font-bold text-glow ${className}`}
+    className={`text-[#C1413E] font-bold text-glow hover:text-shadow-lg transition-all duration-300 ease-in-out
+      hover:brightness-110 ${className}`}
     style={{
       fontSize: "clamp(1.5rem, 7vw, 5rem)",
     }}
