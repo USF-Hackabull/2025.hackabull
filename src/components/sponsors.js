@@ -80,6 +80,11 @@ export const Sponsors = () => {
       url: "https://www.usf.edu/ai-cybersecurity-computing/index.aspx",
       alt: "CSE",
     },
+    {
+      src: "/image/sponsors/SolusCode.png",
+      url: "https://www.soluscode.com/",
+      alt: "SolusCode",
+    },
   ];
 
   return (
