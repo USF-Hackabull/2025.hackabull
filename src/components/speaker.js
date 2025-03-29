@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const Speaker = () => {
   return (
     <div
-      className="relative w-full h-auto"
+      className="relative w-full"
       style={{
         backgroundImage: `url('/image/backgrounds/speakersbackground.png')`,
         backgroundSize: "100% 100%",
@@ -19,8 +19,8 @@ export const Speaker = () => {
       >
         <motion.img
           src="/image/backgrounds/billboardlight.png"
-          alt="Overlay"
-          className="w-full h-auto object-contain"
+          alt="Blinking billboard"
+          className="object-contain"
           initial={{ opacity: 1 }}
           animate={{ opacity: [1, 0.6, 0.3, 0.8, 0.1, 1] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
