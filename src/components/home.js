@@ -1,5 +1,5 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useRef, useState } from "react";
+import { motion, useScroll, useTransform, animate } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
 import Countdown from "react-countdown";
 import CountdownRenderer from "./countdownRenderer";
 
@@ -74,12 +74,40 @@ const GreenCountdown = () => {
 
 export const Home = () => {
   const ref = useRef(null);
+  const logoRef = useRef(null);
+  const [isLogoHovered, setIsLogoHovered] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
+  
+  // Entrance animation for the logo
+  useEffect(() => {
+    if (!hasAnimated && logoRef.current) {
+      const animation = {
+        scale: [0.8, 1.1, 1],
+        opacity: [0, 1],
+        y: [50, -10, 0],
+        transition: { duration: 1.2, ease: "easeOut" }
+      };
+      
+      // Apply animation
+      const element = logoRef.current;
+      element.style.opacity = "0";
+      element.style.transform = "scale(0.8) translateY(50px)";
+      
+      setTimeout(() => {
+        element.style.transition = "all 1.2s ease-out";
+        element.style.opacity = "1";
+        element.style.transform = "scale(1) translateY(0)";
+        setHasAnimated(true);
+      }, 100);
+    }
+  }, [hasAnimated]);
 
   return (
     <div
@@ -96,11 +124,45 @@ export const Home = () => {
         style={{ y: textY }}
         className="flex flex-col items-center mt-[-25vh] justify-start h-screen overflow-hidden w-full relative max-w-full z-30"
       >
-        <img
-          className="z-20 flex object-contain max-h-full h-80 md:h-96 lg:h-[28rem] mb-2 transform transition-all duration-500 hover:scale-105"
-          src="/image/landing-hackabull.png"
-          alt="Hackabull"
-        />
+        <div 
+          ref={logoRef}
+          className="relative"
+          onMouseEnter={() => setIsLogoHovered(true)}
+          onMouseLeave={() => setIsLogoHovered(false)}
+        >
+          {/* Golden glow behind the logo */}
+          <div 
+            className="absolute inset-0 rounded-full blur-2xl z-10"
+            style={{
+              background: 'radial-gradient(circle, rgba(250, 240, 190, 0.8) 0%, rgba(250, 240, 190, 0.4) 40%, rgba(250, 240, 190, 0) 70%)',
+              opacity: isLogoHovered ? 0.9 : 0.6,
+              transform: `scale(${isLogoHovered ? 1.1 : 1})`,
+              transition: 'all 0.6s ease',
+            }}
+          ></div>
+          
+          <img
+            className="z-20 relative flex object-contain max-h-full h-80 md:h-96 lg:h-[28rem] mb-2 transform transition-all duration-500 hover:scale-110"
+            style={{
+              filter: `drop-shadow(0 0 8px rgba(250, 240, 190, 0.5)) drop-shadow(0 0 20px rgba(44, 81, 2, 0.5))`,
+              animation: 'pulse 3s infinite alternate'
+            }}
+            src="/image/landing-hackabull.png"
+            alt="Hackabull"
+          />
+          
+          {/* CSS for the pulse animation */}
+          <style jsx>{`
+            @keyframes pulse {
+              0% {
+                filter: drop-shadow(0 0 10px rgba(250, 240, 190, 0.5)) drop-shadow(0 0 20px rgba(44, 81, 2, 0.4));
+              }
+              100% {
+                filter: drop-shadow(0 0 15px rgba(250, 240, 190, 0.7)) drop-shadow(0 0 30px rgba(44, 81, 2, 0.6));
+              }
+            }
+          `}</style>
+        </div>
         
         {/* Styled date */}
         <StyledText>04.12.2025 - 04.13.2025</StyledText>
