@@ -53,12 +53,10 @@ function App() {
         <FAQ />
       </section>
 
-      {/* Sponsors Section */}
       <section id="sponsors">
         <Sponsors />
       </section>
 
-      {/* Footer Section */}
       <footer className="bg-gray-900 text-white text-center">
         <div className="py-4 border-t border-green-700/30">
           <p className="text-sm md:text-base">
