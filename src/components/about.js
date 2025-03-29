@@ -43,7 +43,7 @@ export const About = () => {
 
           {/* Right side - Hackathon image */}
           <div className="w-full md:w-[30%] mt-10 md:mt-0">
-            <div className="rounded-xl overflow-hidden shadow-2xl">
+            <div className="rounded-xl overflow-hidden shadow-2xl transition-shadow duration-300 hover:shadow-[0_0_10px_2px_white]">
               <img
                 src="/image/backgrounds/participants.png"
                 alt="Students at Hackabull"
