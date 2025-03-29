@@ -10,13 +10,13 @@ const StyledText = ({ children }) => {
   return (
     <div 
       style={{
-        background: isHovered ? 'rgba(140, 197, 197, 0.75)' : 'rgba(140, 197, 197, 0.65)', 
+        background: isHovered ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.85)', 
         padding: '6px 16px',
         borderRadius: '12px',
         margin: '4px 0',
         cursor: 'default',
         transition: 'all 0.3s ease',
-        boxShadow: isHovered ? '0 0 15px rgba(250, 240, 190, 0.5)' : '0 0 8px rgba(0, 0, 0, 0.2)',
+        boxShadow: isHovered ? '0 0 15px rgba(250, 240, 190, 0.5)' : '0 0 8px rgba(0, 0, 0, 0.1)',
         border: '1px solid rgba(250, 240, 190, 0.3)'
       }}
       onMouseEnter={() => setIsHovered(true)}
@@ -26,7 +26,7 @@ const StyledText = ({ children }) => {
         color: '#2c5102',
         fontSize: '22px',
         fontWeight: 'bold',
-        textShadow: '0 1px 2px rgba(255, 255, 255, 0.7)',
+        textShadow: '0 1px 2px rgba(255, 255, 255, 0.5)',
         transition: 'all 0.3s ease'
       }}>
         {children}
@@ -42,13 +42,13 @@ const GreenCountdown = () => {
   return (
     <div 
       style={{
-        background: isHovered ? 'rgba(140, 197, 197, 0.75)' : 'rgba(140, 197, 197, 0.65)', 
+        background: isHovered ? 'rgba(255, 255, 255, 0.95)' : 'rgba(255, 255, 255, 0.85)', 
         padding: '6px 16px',
         borderRadius: '12px',
         margin: '4px 0',
         cursor: 'default',
         transition: 'all 0.3s ease',
-        boxShadow: isHovered ? '0 0 15px rgba(250, 240, 190, 0.5)' : '0 0 8px rgba(0, 0, 0, 0.2)',
+        boxShadow: isHovered ? '0 0 15px rgba(250, 240, 190, 0.5)' : '0 0 8px rgba(0, 0, 0, 0.1)',
         border: '1px solid rgba(250, 240, 190, 0.3)'
       }}
       onMouseEnter={() => setIsHovered(true)}
@@ -61,7 +61,7 @@ const GreenCountdown = () => {
             color: '#2c5102',
             fontSize: '22px',
             fontWeight: 'bold',
-            textShadow: '0 1px 2px rgba(255, 255, 255, 0.7)',
+            textShadow: '0 1px 2px rgba(255, 255, 255, 0.5)',
             transition: 'all 0.3s ease'
           }}>
             {days} days {hours} hours {minutes} minutes {seconds} seconds
