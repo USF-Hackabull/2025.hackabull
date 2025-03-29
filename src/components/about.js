@@ -3,20 +3,19 @@ import { Text, Title } from "./typography";
 export const About = () => {
   return (
     <div
-      className="w-full min-h-auto flex items-center justify-center"
+      className="w-full flex items-center justify-center bg-cover md:bg-[length:100%_100%]"
       style={{
         backgroundImage: `url('/image/backgrounds/aboutbackground.png')`,
-        backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         aspectRatio: "16/9",
       }}
     >
       <div className="container mx-auto px-4 py-20">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+        <div className="flex flex-col md:flex-row items-center md:justify-center gap-8 md:gap-16">
           {/* Left side - About Us text */}
-          <div className="w-full md:w-1/2 text-center md:text-left">
-            <div className="flex items-center mb-8 justify-center md:justify-start">
+          <div className="w-full md:w-1/2 text-center md:text-left md:my-10">
+            <div className="flex items-center justify-center md:justify-start">
               <img
                 src="/hackabull-favicon.png"
                 alt="Hackabull Logo"
@@ -35,15 +34,15 @@ export const About = () => {
 
             <a
               href="#faq"
-              className="my-4 inline-block bg-green-600 text-white font-bold py-4 px-10 rounded-lg text-lg transition-all duration-300 ease-in-out shadow-md 
-             hover:bg-white hover:text-[#254017] hover:shadow-lg hover:scale-105"
+              className="md:mt-[20%] my-4 inline-block text-white font-bold py-4 px-10 rounded-lg text-lg transition-all duration-300 ease-in-out shadow-2xl border-white border-2 
+             hover:bg-white hover:text-[#254017] hover:shadow-2xl hover:scale-105"
             >
               FAQ
             </a>
           </div>
 
           {/* Right side - Hackathon image */}
-          <div className="w-full md:w-1/2 mt-10 md:mt-0">
+          <div className="w-full md:w-[30%] mt-10 md:mt-0">
             <div className="rounded-xl overflow-hidden shadow-2xl">
               <img
                 src="/image/backgrounds/participants.png"
