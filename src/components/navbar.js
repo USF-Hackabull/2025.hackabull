@@ -7,10 +7,10 @@ const ApplyButton = ({ isMobile }) => {
   return (
     <a href="https://portal.hackduke.org/">
       <button
-        className={`text-white ${
+        className={`text-white mx-auto bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl ${
           isMobile
-            ? "flex"
-            : "text-2xl bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl transform transition duration-200 hover:scale-105"
+            ? "flex "
+            : "text-2xl pl-8 pr-8 pt-1 pb-1 rounded-xl transform transition duration-200 hover:scale-105"
         }`}
       >
         Apply
@@ -29,7 +29,7 @@ const NavLink = ({ sectionId, title }) => {
   return (
     <button
       onClick={() => scrollToSection(sectionId)}
-      className="transition-all duration-300 ease-in-out hover:bg-white hover:shadow-md rounded-md p-2 hover:scale-105"
+      className="transition-all duration-300 ease-in-out hover:bg-white hover:shadow-md rounded-md p-2 hover:scale-105 hover:-translate-y-1"
     >
       <Text>{title}</Text>
     </button>
@@ -47,7 +47,7 @@ const NavLinks = ({ isMobile }) => {
   return (
     <>
       {isMobile ? (
-        <div className="flex flex-col text-lg text-start bg-black rounded-md p-4">
+        <div className="flex flex-col text-lg text-start bg-white rounded-md p-4">
           {links.map((link) => {
             return (
               <NavLink

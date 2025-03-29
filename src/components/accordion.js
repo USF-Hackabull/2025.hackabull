@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Text } from "./typography";
 import "./accordion.css"; // Import the CSS file for animations
 
 const Accordion = ({ items }) => {
@@ -38,7 +39,7 @@ const AccordionItem = ({ title, content, isOpen, onClick, index }) => {
           color: index % 2 === 0 ? `#3b2a1d` : `#1a5653`,
         }}
       >
-        <p className="text-[2vw] md:text-2xl mb-0 md:mb-1 font-montalt font-medium text-red-700">
+        <p className="text-md md:text-2xl mb-0 md:mb-1 font-montalt font-medium text-red-700">
           {title}
         </p>
       </div>
@@ -47,7 +48,7 @@ const AccordionItem = ({ title, content, isOpen, onClick, index }) => {
           isOpen ? "open" : ""
         }`}
       >
-        {content}
+        <Text>{content}</Text>
       </div>
     </li>
   );
