@@ -17,7 +17,7 @@ export const FAQ = () => {
 
         <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-16 max-w-6xl mx-auto mb-12 relative z-20">
           <div className="w-full md:w-1/2 bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-6">
-            <h2 className="text-center mb-6 text-[#D4CFF4] text-2xl md:text-3xl font-quicksand font-bold tracking-wide">
+            <h2 className="text-center mb-6 text-[#254017] text-2xl md:text-3xl font-quicksand font-bold tracking-wide">
               General
             </h2>
             <Accordion
@@ -29,7 +29,7 @@ export const FAQ = () => {
           </div>
 
           <div className="w-full md:w-1/2 bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-6">
-            <h2 className="text-center mb-6 text-[#D4CFF4] text-2xl md:text-3xl font-quicksand font-bold tracking-wide">
+            <h2 className="text-center mb-6 text-[#254017] text-2xl md:text-3xl font-quicksand font-bold tracking-wide">
               Logistics
             </h2>
             <Accordion

@@ -1,7 +1,6 @@
 import React from "react";
 import { Title } from "./typography";
 
-// Reusable SponsorLogo Component
 const SponsorLogo = ({ src, alt, className, url, noPadding = false }) => {
   return (
     <a
@@ -24,7 +23,6 @@ const SponsorLogo = ({ src, alt, className, url, noPadding = false }) => {
 };
 
 export const Sponsors = () => {
-  // Define all sponsors in a single array for consistent handling
   const allSponsors = [
     {
       src: "/image/sponsors/Pfizer.png",
@@ -60,11 +58,6 @@ export const Sponsors = () => {
       src: "/image/sponsors/Mosaic.svg",
       url: "https://www.mosaic.com/",
       alt: "Mosaic",
-    },
-    {
-      src: "/image/sponsors/SolusCode.png",
-      url: "https://www.soluscode.com/",
-      alt: "SolusCode",
     },
     {
       src: "/image/sponsors/RaymondJames.png",

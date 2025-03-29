@@ -10,11 +10,7 @@ export const Home = () => {
     offset: ["start start", "end start"],
   });
 
-  // Define the transform values for each layer
-  const layer1Y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
-  const layer2Y = useTransform(scrollYProgress, [0, 1], ["0%", "45%"]);
-  const layer3Y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "70%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
 
   return (
     <div
@@ -33,7 +29,7 @@ export const Home = () => {
       >
         <img
           className="z-20 flex object-contain max-h-full h-48"
-          src="/images/HackDuke.png"
+          src="/image/landing-hackabull.png"
           alt="Hack Duke"
         ></img>
         <h1 className="text-2xl z-50"> 04.12.2025 </h1>
@@ -49,45 +45,6 @@ export const Home = () => {
           Apply Now!
         </a>
       </motion.div>
-
-      {/* Background Layer (Static) */}
-      {/* <div
-        className="absolute inset-0 z-0 w-full h-full"
-        style={{
-          backgroundImage: `url(/image/backgrounds/landingbackground.png)`,
-          backgroundPosition: "center",
-          backgroundSize: "100% 100%",
-          backgroundRepeat: "no-repeat",
-        }}
-      /> */}
-
-      {/* <motion.div
-        className="absolute inset-0 z-10 -bottom-20"
-        style={{
-          backgroundImage: `url(/image/backgrounds/city1.png)`,
-          backgroundPosition: "bottom",
-          backgroundSize: "cover",
-          y: layer1Y,
-        }}
-      />
-      <motion.div
-        className="absolute inset-0 z-20 -bottom-40"
-        style={{
-          backgroundImage: `url(/image/backgrounds/city2.png)`,
-          backgroundPosition: "bottom",
-          backgroundSize: "cover",
-          y: layer2Y,
-        }}
-      />
-      <motion.div
-        className="absolute inset-0 z-20 -bottom-40"
-        style={{
-          backgroundImage: `url(/image/backgrounds/bridge.png)`,
-          backgroundPosition: "bottom",
-          backgroundSize: "cover",
-          y: layer3Y,
-        }}
-      /> */}
     </div>
   );
 };
