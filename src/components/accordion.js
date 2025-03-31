@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Text } from "./typography";
 import "./accordion.css"; // Import the CSS file for animations
+import ReactMarkdown from "react-markdown";
 
 const Accordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -48,7 +49,25 @@ const AccordionItem = ({ title, content, isOpen, onClick, index }) => {
           isOpen ? "open" : ""
         }`}
       >
-        <Text>{content}</Text>
+        <Text>
+          <ReactMarkdown
+            components={{
+              a: ({ node, ...props }) => (
+                <a
+                  className="underline hover:font-bold transition-font duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={props.children || "Link"}
+                  {...props}
+                >
+                  {props.children || "Accessible Link"}
+                </a>
+              ),
+            }}
+          >
+            {content}
+          </ReactMarkdown>
+        </Text>
       </div>
     </li>
   );

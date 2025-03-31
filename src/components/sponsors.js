@@ -35,11 +35,6 @@ export const Sponsors = () => {
       alt: "Amazon",
     },
     {
-      src: "/image/sponsors/MLH_Hacking.png",
-      url: "https://mlh.io/",
-      alt: "MLH",
-    },
-    {
       src: "/image/sponsors/JohnsonAndJohnson.png",
       url: "https://www.jnj.com/",
       alt: "Johnson and Johnson",
