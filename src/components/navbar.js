@@ -37,7 +37,7 @@ const NavLink = ({ sectionId, title, externalUrl, icon }) => {
         href={externalUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="transition-all duration-300 ease-in-out hover:bg-white hover:shadow-md rounded-md p-2 hover:scale-105 hover:-translate-y-1 flex items-center justify-center"
+        className="transition-all duration-300 ease-in-out bg-white hoverhover::shadow-md rounded-md p-2 hover:scale-105 hover:-translate-y-1 flex items-center justify-center"
         aria-label={title}
       >
         {icon}
@@ -66,7 +66,7 @@ const NavLinks = ({ isMobile }) => {
       externalUrl: "https://discord.gg/37jQnArEKg",
       icon: (
         <svg
-          className="w-8 h-8 text-[#395C6B] hover:text-[#7289da]"
+          className="w-8 h-8 text-[#254017] hover:text-[#7289da]"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ const NavLinks = ({ isMobile }) => {
       externalUrl: "https://www.instagram.com/hackabull/",
       icon: (
         <svg
-          className="w-8 h-8 text-[#395C6B] hover:text-[#e1306c]"
+          className="w-8 h-8 text-[#254017] hover:text-[#e1306c]"
           fill="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -152,6 +152,13 @@ export const Navbar = () => {
     observer.observe(logoRef.current);
     observer.observe(banner);
 
+    const initialCheck = () => {
+      const bannerRect = banner.getBoundingClientRect();
+      setIsLogoHidden(bannerRect.bottom <= 0);
+    };
+
+    initialCheck();
+
     return () => observer.disconnect();
   }, []);
   return (
@@ -165,14 +172,16 @@ export const Navbar = () => {
             }`}
             ref={logoRef}
           >
-            <img
-              src="/hackabull-favicon.png"
-              alt="HackaBull Logo"
-              className="h-16 w-16"
-            />
-            <span className="text-[#395C6B] text-xl md:text-2xl font-bold ml-2">
-              HackaBull
-            </span>
+            <div className="flex items-center">
+              <img
+                src="/hackabull-favicon.png"
+                alt="HackaBull Logo"
+                className="h-16 w-16"
+              />
+              <span className="text-[#254017] text-xl md:text-2xl font-bold ml-2">
+                HackaBull
+              </span>
+            </div>
           </a>
         </div>
 
