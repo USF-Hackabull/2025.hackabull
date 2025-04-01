@@ -1,9 +1,15 @@
 import { Title } from "./typography";
+import { Logo } from "./logo";
 
 export const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
+        {/* Logo at top of footer */}
+        <div className="flex justify-center mb-8">
+          <Logo className="w-40" />
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left column - Contact info */}
           <div>
@@ -24,11 +30,11 @@ export const Footer = () => {
                 href="https://discord.gg/37jQnArEKg"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-green-400 transition-colors"
+                className="bg-[#5865F2]/20 p-2 rounded-lg hover:bg-[#5865F2]/30 transition-all duration-300"
                 aria-label="Join our Discord"
               >
                 <svg
-                  className="w-8 h-8"
+                  className="w-8 h-8 text-[#5865F2]"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,11 +46,11 @@ export const Footer = () => {
                 href="https://www.instagram.com/hackabull/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-green-400 transition-colors"
+                className="bg-[#E1306C]/20 p-2 rounded-lg hover:bg-[#E1306C]/30 transition-all duration-300"
                 aria-label="Follow us on Instagram"
               >
                 <svg
-                  className="w-8 h-8"
+                  className="w-8 h-8 text-[#E1306C]"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
