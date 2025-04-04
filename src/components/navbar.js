@@ -14,7 +14,7 @@ const ApplyButton = ({ isMobile }) => {
         className={`text-white bg-[#C1413E] pl-8 pr-8 pt-1 pb-1 rounded-xl font-bold ${
           isMobile
             ? "flex "
-            : "text-2xl pl-8 pr-8 pt-1 pb-1 rounded-xl transform transition duration-200 hover:scale-105"
+            : "text-2xl pl-8 pr-8 pt-1 pb-1 rounded-xl transform transition duration-200 hover:scale-100"
         }`}
       >
         Apply
@@ -163,7 +163,7 @@ export const Navbar = () => {
   }, []);
   return (
     <nav className="fixed top-0 z-50 w-full bg-transparent backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto flex items-start p-4">
+      <div className="w-full mx-auto flex justify-between items-center px-4 py-2 overflow-hidden box-border">
         <div className={`flex items-center`}>
           <a
             href="/"
@@ -185,7 +185,7 @@ export const Navbar = () => {
           </a>
         </div>
 
-        <div className="hidden md:flex flex-grow justify-end pr-0">
+        <div className="hidden md:flex items-center space-x-4">
           <NavLinks />
         </div>
 
