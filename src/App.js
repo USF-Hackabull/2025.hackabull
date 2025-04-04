@@ -6,22 +6,14 @@ import { Tracks } from "./components/tracks";
 import { FAQ } from "./components/faq";
 import { Sponsors } from "./components/sponsors";
 import { Speaker } from "./components/speaker";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
     <>
       <a
         id="mlh-trust-badge"
-        style={{
-          display: "block",
-          maxWidth: "100px",
-          minWidth: "60px",
-          position: "absolute",
-          left: "10px",
-          top: "0",
-          width: "10%",
-          zIndex: 10000,
-        }}
+        className="block max-w-[100px] min-w-[60px] absolute left-2 top-0 w-[10%] z-[10000]"
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2025-season&utm_content=white"
         target="_blank"
         rel="noopener noreferrer"
@@ -29,7 +21,7 @@ function App() {
         <img
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
           alt="Major League Hacking 2025 Hackathon Season"
-          style={{ width: "100%" }}
+          className="w-full"
         />
       </a>
 
@@ -57,15 +49,7 @@ function App() {
         <Sponsors />
       </section>
 
-      <footer className="text-white text-center">
-        <p className="text-sm md:text-base py-4 bg-[#254017]">
-          Made with 💚 by the Hackabull team with support from our friends at
-          HackDuke
-        </p>
-        <div className="bg-[#C1413E] py-2 text-xs">
-          <p>© 2025 Hackabull</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
