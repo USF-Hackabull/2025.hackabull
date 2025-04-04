@@ -45,9 +45,9 @@ export const Sponsors = () => {
       alt: "NextEra Energy",
     },
     {
-      src: "/image/sponsors/StandOutStickers.png",
-      url: "https://www.standoutstickers.com/",
-      alt: "StandOutStickers",
+      src: "/image/sponsors/PureButtons.png",
+      url: "https://www.purebuttons.com/",
+      alt: "PureButtons",
     },
     {
       src: "/image/sponsors/Mosaic.svg",
@@ -65,9 +65,9 @@ export const Sponsors = () => {
       alt: "Slalom",
     },
     {
-      src: "/image/sponsors/Lithionics.png",
-      url: "https://lithionics.com/",
-      alt: "Lithionics",
+      src: "/image/sponsors/Celsius.png",
+      url: "https://www.celsius.com/",
+      alt: "Celsius",
     },
     { src: "/image/sponsors/CAE.png", url: "https://www.cae.com/", alt: "CAE" },
     {
