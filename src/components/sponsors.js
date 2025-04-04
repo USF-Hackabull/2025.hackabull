@@ -80,6 +80,11 @@ export const Sponsors = () => {
       url: "https://www.soluscode.com/",
       alt: "SolusCode",
     },
+    {
+      src: "/image/sponsors/9yaps.avif",
+      url: "https://www.9yaps.com/",
+      alt: "9Yaps",
+    },
   ];
 
   return (
