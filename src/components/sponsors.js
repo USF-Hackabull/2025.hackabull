@@ -69,10 +69,14 @@ export const Sponsors = () => {
       url: "https://www.celsius.com/",
       alt: "Celsius",
     },
-    { src: "/image/sponsors/CAE.png", url: "https://www.cae.com/", alt: "CAE" },
+    { src: "/image/sponsors/Monster.webp", 
+      url: "https://www.monsterenergy.com/en-us/", 
+      alt: "Monster" },
+    { src: "/image/sponsors/CAE.png", 
+      url: "https://www.cae.com/", 
+      alt: "CAE" },
     {
       src: "/image/sponsors/CSE.webp",
-      url: "https://www.usf.edu/ai-cybersecurity-computing/index.aspx",
       alt: "CSE",
     },
     {
@@ -101,8 +105,8 @@ export const Sponsors = () => {
         <Title className="text-center mb-10">Sponsors</Title>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl mx-auto">
-          {allSponsors.map((sponsor, index) => (
-            <div key={index} className="w-full p-2">
+          {allSponsors.map((sponsor) => (
+            <div key={sponsor.alt} className="w-full p-2">
               <SponsorLogo
                 src={sponsor.src}
                 url={sponsor.url}
