@@ -25,44 +25,9 @@ const SponsorLogo = ({ src, alt, className, url, noPadding = false }) => {
 export const Sponsors = () => {
   const allSponsors = [
     {
-      src: "/image/sponsors/Pfizer.png",
-      url: "https://www.pfizer.com/about",
-      alt: "Pfizer",
-    },
-    {
       src: "/image/sponsors/Amazon.png",
       url: "https://www.amazon.com/",
       alt: "Amazon",
-    },
-    {
-      src: "/image/sponsors/JohnsonAndJohnson.png",
-      url: "https://www.jnj.com/",
-      alt: "Johnson and Johnson",
-    },
-    {
-      src: "/image/sponsors/NextEraEnergy.png",
-      url: "https://www.nexteraenergy.com/",
-      alt: "NextEra Energy",
-    },
-    {
-      src: "/image/sponsors/PureButtons.png",
-      url: "https://www.purebuttons.com/",
-      alt: "PureButtons",
-    },
-    {
-      src: "/image/sponsors/Mosaic.svg",
-      url: "https://www.mosaic.com/",
-      alt: "Mosaic",
-    },
-    {
-      src: "/image/sponsors/RaymondJames.png",
-      url: "https://www.raymondjames.com/",
-      alt: "Raymond James",
-    },
-    {
-      src: "/image/sponsors/Slalom.svg",
-      url: "https://www.slalom.com/",
-      alt: "Slalom",
     },
     {
       src: "/image/sponsors/Celsius.png",
@@ -72,17 +37,57 @@ export const Sponsors = () => {
     { src: "/image/sponsors/Monster.webp", 
       url: "https://www.monsterenergy.com/en-us/", 
       alt: "Monster" },
+    {
+      src: "/image/sponsors/NextEraEnergy.png",
+      url: "https://www.nexteraenergy.com/",
+      alt: "NextEra Energy",
+    },
+    {
+      src: "/image/sponsors/Pfizer.png",
+      url: "https://www.pfizer.com/about",
+      alt: "Pfizer",
+    },
+    {
+      src: "/image/sponsors/Slalom.svg",
+      url: "https://www.slalom.com/",
+      alt: "Slalom",
+    },
     { src: "/image/sponsors/CAE.png", 
       url: "https://www.cae.com/", 
       alt: "CAE" },
     {
-      src: "/image/sponsors/CSE.webp",
-      alt: "CSE",
-    },
-    {
       src: "/image/sponsors/SolusCode.png",
       url: "https://www.soluscode.com/",
       alt: "SolusCode",
+    },
+    {
+      src: "/image/sponsors/JohnsonAndJohnson.png",
+      url: "https://www.jnj.com/",
+      alt: "Johnson and Johnson",
+    },
+    {
+      src: "/image/sponsors/PureButtons.png",
+      url: "https://www.purebuttons.com/",
+      alt: "PureButtons",
+    },
+    {
+      src: "/image/sponsors/ImpressInk.png",
+      url: "https://www.impressink.com/",
+      alt: "Impress.Ink",
+    },
+    {
+      src: "/image/sponsors/RaymondJames.png",
+      url: "https://www.raymondjames.com/",
+      alt: "Raymond James",
+    },
+    {
+      src: "/image/sponsors/Mosaic.svg",
+      url: "https://www.mosaic.com/",
+      alt: "Mosaic",
+    },
+    {
+      src: "/image/sponsors/CSE.webp",
+      alt: "CSE",
     },
     {
       src: "/image/sponsors/9yaps.avif",
