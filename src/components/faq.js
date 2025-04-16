@@ -7,7 +7,7 @@ export const FAQ = () => {
     <div
       className="relative w-full py-16 bg-cover md:bg-[length:100%_100%]"
       style={{
-        backgroundImage: `url('/image/backgrounds/faqbackground.png')`,
+        backgroundImage: `url('/image/backgrounds/faqbackground.webp')`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}

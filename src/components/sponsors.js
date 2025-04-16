@@ -11,6 +11,7 @@ const SponsorLogo = ({ src, alt, className, url, noPadding = false }) => {
     >
       <div className="bg-[#6a717b] bg-opacity-60 w-full h-full aspect-video flex items-center justify-center rounded-sm shadow-md">
         <img
+          loading="lazy"
           src={src}
           alt={alt}
           className={`max-h-[75%] max-w-[75%] object-contain transform transition duration-300 hover:scale-110 ${
@@ -25,25 +26,27 @@ const SponsorLogo = ({ src, alt, className, url, noPadding = false }) => {
 export const Sponsors = () => {
   const allSponsors = [
     {
-      src: "/image/sponsors/Amazon.png",
+      src: "/image/sponsors/Amazon.webp",
       url: "https://www.amazon.com/",
       alt: "Amazon",
     },
     {
-      src: "/image/sponsors/Celsius.png",
+      src: "/image/sponsors/Celsius.webp",
       url: "https://www.celsius.com/",
       alt: "Celsius",
     },
-    { src: "/image/sponsors/Monster.webp", 
-      url: "https://www.monsterenergy.com/en-us/", 
-      alt: "Monster" },
     {
-      src: "/image/sponsors/NextEraEnergy.png",
+      src: "/image/sponsors/Monster.webp",
+      url: "https://www.monsterenergy.com/en-us/",
+      alt: "Monster",
+    },
+    {
+      src: "/image/sponsors/NextEraEnergy.webp",
       url: "https://www.nexteraenergy.com/",
       alt: "NextEra Energy",
     },
     {
-      src: "/image/sponsors/Pfizer.png",
+      src: "/image/sponsors/Pfizer.webp",
       url: "https://www.pfizer.com/about",
       alt: "Pfizer",
     },
@@ -52,26 +55,28 @@ export const Sponsors = () => {
       url: "https://www.slalom.com/",
       alt: "Slalom",
     },
-    { src: "/image/sponsors/CAE.png", 
-      url: "https://www.cae.com/", 
-      alt: "CAE" },
     {
-      src: "/image/sponsors/SolusCode.png",
+      src: "/image/sponsors/CAE.webp",
+      url: "https://www.cae.com/",
+      alt: "CAE",
+    },
+    {
+      src: "/image/sponsors/SolusCode.webp",
       url: "https://www.soluscode.com/",
       alt: "SolusCode",
     },
     {
-      src: "/image/sponsors/JohnsonAndJohnson.png",
+      src: "/image/sponsors/JohnsonAndJohnson.webp",
       url: "https://www.jnj.com/",
       alt: "Johnson and Johnson",
     },
     {
-      src: "/image/sponsors/PureButtons.png",
+      src: "/image/sponsors/PureButtons.webp",
       url: "https://www.purebuttons.com/",
       alt: "PureButtons",
     },
     {
-      src: "/image/sponsors/ImpressInk.png",
+      src: "/image/sponsors/ImpressInk.webp",
       url: "https://www.impressink.com/",
       alt: "Impress.Ink",
     },
@@ -90,7 +95,7 @@ export const Sponsors = () => {
       alt: "CSE",
     },
     {
-      src: "/image/sponsors/9yaps.avif",
+      src: "/image/sponsors/9yaps.webp",
       url: "https://www.9yaps.com/",
       alt: "9Yaps",
     },
@@ -100,7 +105,7 @@ export const Sponsors = () => {
     <div
       className="w-full bg-gradient-to-b from-green-800/60 to-gray-900/90 py-16 pb-20"
       style={{
-        backgroundImage: `url('/image/backgrounds/sponsorsbackground.png')`,
+        backgroundImage: `url('/image/backgrounds/sponsorsbackground.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

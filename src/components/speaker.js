@@ -6,7 +6,7 @@ export const Speaker = () => {
     <div
       className="relative w-full"
       style={{
-        backgroundImage: `url('/image/backgrounds/speakersbackground.png')`,
+        backgroundImage: `url('/image/backgrounds/speakersbackground.webp')`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -18,7 +18,7 @@ export const Speaker = () => {
         style={{ zIndex: 2 }}
       >
         <motion.img
-          src="/image/backgrounds/billboardlight.png"
+          src="/image/backgrounds/billboardlight.webp"
           alt="Blinking billboard"
           className="object-contain"
           initial={{ opacity: 1 }}

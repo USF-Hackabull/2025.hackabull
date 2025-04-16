@@ -60,7 +60,7 @@ export const Home = () => {
       ref={ref}
       className="w-full h-[90dvh] md:h-[130dvh] overflow-hidden relative flex items-center justify-center"
       style={{
-        backgroundImage: `url(/image/backgrounds/landingbackground.png)`,
+        backgroundImage: `url(/image/backgrounds/landingbackground.webp)`,
         backgroundPosition: "bottom",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -72,7 +72,7 @@ export const Home = () => {
       >
         <img
           className="z-20 flex object-contain max-h-full h-70 md:h-80 lg:h-90 mb-2 transform transition-all duration-500 hover:scale-105"
-          src="/image/landing-hackabull.png"
+          src="/image/landing-hackabull.webp"
           alt="Hackabull"
         />
 

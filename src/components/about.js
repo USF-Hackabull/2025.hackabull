@@ -5,7 +5,7 @@ export const About = () => {
     <div
       className="w-full flex items-center justify-center bg-cover md:bg-[length:100%_100%]"
       style={{
-        backgroundImage: `url('/image/backgrounds/aboutbackground.png')`,
+        backgroundImage: `url('/image/backgrounds/aboutbackground.webp')`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         aspectRatio: "16/9",
@@ -40,7 +40,7 @@ export const About = () => {
           <div className="w-full md:w-[30%] mt-10 md:mt-0">
             <div className="rounded-xl overflow-hidden shadow-2xl transition-shadow duration-300 hover:shadow-[0_0_10px_2px_white]">
               <img
-                src="/image/backgrounds/participants.png"
+                src="/image/backgrounds/participants.webp"
                 alt="Students at Hackabull"
                 className="w-full h-auto object-cover"
                 onError={(e) => {

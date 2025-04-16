@@ -164,7 +164,7 @@ export const Tracks = () => {
         isMobile ? "py-12" : "h-[120vw] md:h-[100vw]"
       }`}
       style={{
-        backgroundImage: `url('/image/backgrounds/tracksbackground.png')`,
+        backgroundImage: `url('/image/backgrounds/tracksbackground.webp')`,
         backgroundSize: isMobile ? "cover" : "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

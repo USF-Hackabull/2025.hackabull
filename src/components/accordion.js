@@ -33,7 +33,7 @@ const AccordionItem = ({ title, content, isOpen, onClick, index }) => {
         className={`cursor-pointer custom-shell-bullet font-bold pl-[3em]`}
         onClick={onClick}
         style={{
-          backgroundImage: "url('/image/backgrounds/bulletpoint.png')",
+          backgroundImage: "url('/image/backgrounds/bulletpoint.webp')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "left center",
           backgroundSize: "2.25em",
