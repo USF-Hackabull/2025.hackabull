@@ -39,7 +39,6 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-motion"),
-    require("taos/plugin"),
     function ({ addUtilities }) {
       addUtilities(
         {
